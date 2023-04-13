@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Tour Manage"
+        android:textSize="20dp"/>
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:queryHint="Search"
+        android:layout_below="@+id/title"
+        android:iconifiedByDefault="false"/>
+
+    <Spinner
+        android:id="@+id/imgs_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@+id/edt_tourName"
+        android:layout_alignBottom="@+id/btnAdd"
+        android:layout_toRightOf="@+id/btnUpdate"/>
+
+    <EditText
+        android:id="@+id/edt_tourName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="16dp"
+        android:hint="Enter tour" />
+
+    <EditText
+        android:id="@+id/edt_tourTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_tourName"
+        android:layout_alignStart="@+id/edt_tourName"
+        android:layout_alignEnd="@+id/edt_tourName"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="0dp"
+        android:hint="Enter time" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_2"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="22dp" />
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_tourTime"
+        android:layout_alignStart="@+id/edt_tourName"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="18dp"
+        android:text="ADD" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnAdd"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@+id/btnAdd"
+        android:text="Update"
+        android:id="@+id/btnUpdate"/>
+
+
+
+    <TextView
+        android:id="@+id/title_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAdd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Tour List"
+        android:textSize="20dp" />
+
+</RelativeLayout>

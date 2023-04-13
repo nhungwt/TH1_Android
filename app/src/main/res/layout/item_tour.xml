@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_item">
+
+    <ImageView
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:id="@+id/img_icon"
+        android:src="@drawable/ic_airplanemode"/>
+
+    <TextView
+        android:id="@+id/tourName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/img_icon"
+        android:text="Name tour" />
+
+
+    <TextView
+        android:id="@+id/tourTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tourName"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@+id/tourName"
+        android:text="Date" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/img_icon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:text="Delete"
+        android:textSize="10dp" />
+
+</RelativeLayout>
